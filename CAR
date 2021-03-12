@@ -1,7 +1,21 @@
-
+/*
+ *@file class & CRC card
+ * 
+ *物件導向課程code註解
+ *
+ *@author 1092040陳宣予
+ */
+ 
 #include <iostream>
 #include <string>
 using namespace std;
+
+/**
+ * @class CCAR的簡易說明
+ *
+ *A example for class
+ */
+ 
 class CCAR {
 private:
 string nickname;
@@ -9,15 +23,15 @@ protected:
 int light;
 int wheel;
 public:
-CCAR() :light(2)
+CCAR() :light(2)    ///建構子給值
 {
-wheel = 5;
+wheel = 5；         ///等號給值
 cout << "car's constructor(wheel=" << wheel << ")" << endl;
 }
 CCAR(string nickname) :light(2)
 {
 wheel = 5;
-this->nickname = nickname;
+this->nickname = nickname;         ///參數與成員變量名相同
 cout << "car's constructor(nickname=" << nickname << ")" << endl;
 }
 ~CCAR()
